@@ -37,3 +37,7 @@ This project is completed based on the "Bookshelf - Node.js on Google Cloud Plat
       "email": "anassri@google.com"
     }
   ].
+
+3. Running method
+Please refer to the steps shown in the following link:
+https://cloud.google.com/nodejs/getting-started/using-cloud-sql#handling_user_submissions_with_forms
