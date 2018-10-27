@@ -1,0 +1,26 @@
+extends ../base.pug
+
+block content
+  h3 #{action} Vehicle account
+  form(method="POST")
+    .form-group
+      label(for="account") Account
+      input.form-control(type="text", name="account", id="account", value=vehicle.account)
+	.form-group
+      label(for="userPassword") Password
+      input.form-control(type="text", userPassword="userPassword", id="userPassword", value=vehicle.userPassword)
+    .form-group
+      label(for="name") Name
+      input.form-control(type="text", name="name", id="name", value=vehicle.name)
+    .form-group
+      label(for="address") Address
+      input.form-control(type="text", name="address", id="address", value=vehicle.address)
+    .form-group
+      label(for="phone") Phone
+      input.form-control(type="text", name="phone", id="phone", value=vehicle.phone)
+    .form-group
+      label(for="drivinghistory") Driving History
+        input.form-control(type="text", name="drivinghistory", id="drivinghistory", value=vehicle.drivinghistory)
+    
+    .form-group
+    button.btn.btn-success(type="submit") Submit

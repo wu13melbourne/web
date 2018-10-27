@@ -1,0 +1,19 @@
+extends ../base.pug
+
+block content
+  h3 Vehicle
+    small
+
+  .btn-group
+    a(href=`/vehicles/${vehicle.id}/edit`, class='btn btn-primary btn-sm')
+      i.glyphicon.glyphicon-edit
+      span  Edit
+    a(href=`/vehicles/${vehicle.id}/delete`, class='btn btn-danger btn-sm')
+      i.glyphicon.glyphicon-trash
+      span  Delete
+	a(href=`/public/htmls/search`, class='btn btn-primary btn-sm')
+      span  Search
+
+  .media
+    .media-body
+      h4= vehicle.account

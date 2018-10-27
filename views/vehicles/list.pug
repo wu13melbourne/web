@@ -1,0 +1,21 @@
+extends ../base.pug
+
+block content
+  h3 vehicles
+
+  a(href="/vehicles/add", class='btn btn-success btn-sm')
+    i.glyphicon.glyphicon-plus
+    span Show All
+
+  each vehicle in vehicles
+    .media
+      a(href=`/vehicles/${vehicle.id}`)
+        .media-body
+          h4= vehicle.account
+          p= vehicle.name
+
+  if nextPageToken
+    nav
+      ul.pager
+        li
+          a(href=`?pageToken=${encodeURIComponent(nextPageToken)}`) More
